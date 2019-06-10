@@ -33,6 +33,8 @@ export class TestCommand extends CommandBase {
      */
     public run(command: CommandParser): void {
 
+        console.log(command);
+
         command.obj.reply(new RichEmbed().setTitle('Test received!'));
 
     }
